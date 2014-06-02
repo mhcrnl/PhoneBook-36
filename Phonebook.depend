@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1401648093 source:c:\users\sanjay\desktop\phonebook\main.cpp
+	<sstream>
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+	<iterator>
+	<cstdlib>
+	"record.h"
+
+1401648652 c:\users\sanjay\desktop\phonebook\record.h
+	<string>
+	<vector>
+
+1401648533 source:c:\users\sanjay\desktop\phonebook\record.cpp
+	"record.h"
+	<iostream>
+	<fstream>
+	<string>
+	<iterator>
+	<iomanip>
+	<cstdlib>
+	<sstream>
+
