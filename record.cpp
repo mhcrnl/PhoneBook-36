@@ -8,8 +8,12 @@
 #include <sstream>
 using namespace std;
 
+
 int getInt()
 {
+    //gets integer from user.
+    //this function is safer than using 
+    //cin >> i;
     string input ="";
     int num;
     while (true)
@@ -35,6 +39,7 @@ void Record::putData(){
     << setw(30) << phone ;
 }
 void displayAll(vector<Record> recs){
+    // display all records in tabular form
     int n=1;
     cout << setfill(' ') << setw(35) << "Name" << setw(30) << "Phone" ;
     for ( vector< Record >::iterator i = recs.begin(); i != recs.end(); ++i ){
@@ -65,6 +70,7 @@ vector<Record> getDataFromFile(char fname[]){
 }
 
 vector<Record> deleteRecord(vector<Record> recs){
+    //delete a record from vector
     if (recs.empty()){
         cout << "\nThere are no records to be deleted !\n" ;
     }
@@ -103,5 +109,7 @@ vector<Record> editRecord(vector<Record> recs){
 
 
 bool cmp( Record r1, Record r2){
+    //compare two records using name field
+    //used for sorting vector with sort() function
     return r1.name < r2.name;
 }

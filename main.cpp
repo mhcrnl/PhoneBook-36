@@ -29,6 +29,7 @@ int menu ()
 int main()
 {
     char fname[] = "Record.txt";
+    // load record from file to vector
     vector<Record> phoneBook = getDataFromFile(fname);
     Record rec;
     int choice = menu();
@@ -63,6 +64,7 @@ int main()
                cout << "\nInvalid Choice ! \nRetry :\n" ;
                break;
            }
+	   // wait for user
            getchar();
            clearScreen;
            choice = menu();
