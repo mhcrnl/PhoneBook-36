@@ -7,12 +7,14 @@
 #include <cstdlib>
 #include <sstream>
 using namespace std;
-
+/**
+    Function : getInt
+*/
 
 int getInt()
 {
     //gets integer from user.
-    //this function is safer than using 
+    //this function is safer than using
     //cin >> i;
     string input ="";
     int num;

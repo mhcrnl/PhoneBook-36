@@ -13,13 +13,17 @@
 
 using namespace std;
 
+/**
+    Functia menu() din
+*/
 int menu ()
 {
     string  title = "Menu" ;
-    string choices[] = {"Enter new record", "Edit a record", "Display all records" ,"Delete" ,"Exit"};
+    string choices[] = {"Enter new record", "Edit a record", "Display all records" ,
+    "Delete" ,"Exit", "GitHub Push"};
     cout << '\t' << title << '\n' ;
     cout << '\t' << setfill('-') << setw(title.length()) ;
-    for (int i=0; i<5; i++)
+    for (int i=0; i<6; i++)
         cout << "\n" << i+1 << "\t" << choices[i] << "\n";
     cout << "\nEnter your choice : ";
     return getInt();
@@ -60,6 +64,9 @@ int main()
                phoneBook.clear();
                return 0;
                break;
+            case 6:
+                system("./gitpush.sh");
+                break;
            default :
                cout << "\nInvalid Choice ! \nRetry :\n" ;
                break;
