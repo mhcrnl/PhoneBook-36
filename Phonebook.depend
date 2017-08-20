@@ -50,3 +50,29 @@
 	<cstdlib>
 	<sstream>
 
+1503077612 source:/home/mhcrnl/Documents/Cpp/PhoneBook-36/main.cpp
+	<sstream>
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<iomanip>
+	<iterator>
+	<cstdlib>
+	<algorithm>
+	"record.h"
+
+1499629444 /home/mhcrnl/Documents/Cpp/PhoneBook-36/record.h
+	<string>
+	<vector>
+
+1503076328 source:/home/mhcrnl/Documents/Cpp/PhoneBook-36/record.cpp
+	"record.h"
+	<iostream>
+	<fstream>
+	<string>
+	<iterator>
+	<iomanip>
+	<cstdlib>
+	<sstream>
+
